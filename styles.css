@@ -1,300 +1,328 @@
 /* Geral */
-* 
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #333;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #333;
+}
 
-  body {
-    background-image: linear-gradient(45deg, rgb(255, 217, 160), rgb(217, 255, 147));
-    background-position: center;
-    background-size:  2560px 1080px;
-  }
-  
-  button {
-    background-color: #fdfdfd;
-    color: rgb(209, 255, 124);;
-    border: 2px solid rgb(209, 255, 124);;
-    padding: 0.3rem 0.6rem;
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-  }
-  
-  button:hover {
-    background-color: rgb(209, 255, 124);;
-  }
-  
-  button:hover > i {
-    color: #fff;
-  }
-  
-  button i {
-    pointer-events: none;
-    color: rgb(209, 255, 124);;
-    font-weight: bold;
-  }
-  
-  input,
-  select {
-    padding: 0.25rem 0.5rem;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-   /* Titulo */
-   .titulo1 {
-    font-size: 45px;
-    font-weight: bold;
-    line-height: 29px;
-    color: darkorange;
-    font-family: 'Tahoma';
-   } 
+body {
+  background-image: linear-gradient(45deg, rgb(235, 192, 128), rgb(217, 255, 147));
+  background-size: 2560px 1080px;
+}
 
-   .titulo2 {
-    font-size: 30px;
-    color: rgb(209, 255, 124);
-    font-family: 'Tahoma';
-    font-style: italic;
+button {
+  background-color: #fdfdfd;
+  color: rgb(147, 211, 29);
+  ;
+  border: 2px solid rgb(147, 211, 29);
+  ;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
 
-   }
+button:hover {
+  background-color: rgb(147, 211, 29);
+  ;
+}
 
-  /* Todo Header */
-  .todo-container {
-    max-width: 450px;
-    margin: 3rem auto 0;
-    background-color: #fdfdfd;
-    padding: 1.5rem;
-    border-radius: 15px;
-  }
-  
-  .todo-container header {
-    text-align: center;
-    padding: 0 1rem 1rem;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  /* Todo Form */
-  #todo-form,
-  #edit-form {
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  #todo-form p,
-  #edit-form p {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  .form-control {
-    display: flex;
-  }
-  
-  .form-control input {
-    margin-right: 0.3rem;
-  }
-  
-  #cancel-edit-btn {
-    margin-top: 1rem;
-    color: #444;
-  }
-  
-  /* Todo Toolbar */
-  #toolbar {
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-  }
-  
-  #toolbar h4 {
-    margin-bottom: 0.5rem;
-  }
-  
-  #search {
-    border-right: 1px solid #ddd;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #search form {
-    display: flex;
-  }
-  
-  #search input {
-    width: 100%;
-    margin-right: 0.3rem;
-  }
-  
-  #filter {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #filter select {
-    flex: 1;
-  }
-  
-  /* Todo List */
-  .todo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem 1rem;
-    border-bottom: 1px solid #ddd;
-    transition: 0.3s;
-  }
-  
-  .todo h3 {
-    flex: 1;
-    font-size: 0.9rem;
-  }
-  
-  .todo button {
-    margin-left: 0.4rem;
-  }
-  
-  .done {
-    background: rgb(209, 255, 124);;
-  }
-  
-  .done h3 {
-    color: #fff;
-    text-decoration: line-through;
-    font-style: italic;
-  }
+button:hover>i {
+  color: #fff;
+}
 
-    /* Imagens */
-  .sapinho {
-    float: right;
-    width: 300px;
-    position: fixed;
-    right: 0pt;
-    bottom: 0pt;
-  }
+button i {
+  pointer-events: none;
+  color: rgb(147, 211, 29);
+  ;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Titulo */
+.titulo1 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 29px;
+  color: rgb(193, 211, 29);
+  font-family: 'Tahoma';
+}
+
+.titulo2 {
+  font-size: 30px;
+  color: rgb(235, 192, 128);
+  font-family: 'Tahoma';
+  font-style: italic;
+
+}
+
+/* Todo Header */
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto 0;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 60px;
+  border: solid 4px rgb(235, 192, 128);
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Todo Form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+  color: #444;
+}
+
+/* Todo Toolbar */
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Todo List */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background: rgb(209, 255, 124);
+  ;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+/* Imagens */
+.sapinho {
+  float: right;
+  width: 300px;
+  position: fixed;
+  right: 10pt;
+  bottom: 10pt;
+}
 
 
-  /* Animação */
+/* Animação */
 
-    .side   img {
+.side img {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   -webkit-border-radius: 0px 0px 0px 0px;
-  border-radius: 0px 0px 0px 0px;;
+  border-radius: 0px 0px 0px 0px;
+  ;
   -webkit-animation-name: bounceInLeft;
   -moz-animation-name: bounceInLeft;
   -o-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
-  -webkit-animation-duration:2s;
-  -moz-animation-duration:2s;
-  -ms-animation-duration:2s;
-  -o-animation-duration:2s;
-  animation-duration:2s;
-  -webkit-animation-fill-mode:both;
-  -moz-animation-fill-mode:both;
-  -ms-animation-fill-mode:both;
-  -o-animation-fill-mode:both;
-  animation-fill-mode:both;
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  -ms-animation-duration:1s;
-  -o-animation-duration:1s;
-  animation-duration:1s;
-} 
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
 
-.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(-2000px);
-	}	60% {
-		opacity: 1;
-		-webkit-transform: translateX(30px);
-	}
-	
-	80% {
-		-webkit-transform: translateX(-10px);
-	}
-	
-	100% {
-		-webkit-transform: translateX(0);
-	}
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
 }
 
 @-moz-keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		-moz-transform: translateX(-2000px);
-	}
-	
-	60% {
-		opacity: 1;
-		-moz-transform: translateX(30px);
-	}
-	
-	80% {
-		-moz-transform: translateX(-10px);
-	}
-	
-	100% {
-		-moz-transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(30px);
+  }
+
+  80% {
+    -moz-transform: translateX(-10px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
 }
 
 @-o-keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		-o-transform: translateX(-2000px);
-	}
-	
-	60% {
-		opacity: 1;
-		-o-transform: translateX(30px);
-	}
-	
-	80% {
-		-o-transform: translateX(-10px);
-	}
-	
-	100% {
-		-o-transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateX(30px);
+  }
+
+  80% {
+    -o-transform: translateX(-10px);
+  }
+
+  100% {
+    -o-transform: translateX(0);
+  }
 }
 
 @keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-2000px);
-	}
-	
-	60% {
-		opacity: 1;
-		transform: translateX(30px);
-	}
-	
-	80% {
-		transform: translateX(-10px);
-	}
-	
-	100% {
-		transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .bounceInLeft {
-	-webkit-animation-name: bounceInLeft;
-	-moz-animation-name: bounceInLeft;
-	-o-animation-name: bounceInLeft;
-	animation-name: bounceInLeft;
+  -webkit-animation-name: bounceInLeft;
+  -moz-animation-name: bounceInLeft;
+  -o-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
 }
